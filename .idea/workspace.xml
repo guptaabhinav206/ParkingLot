@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fd8a5dcb-64b4-43a6-b0b1-4a54c00dbe91" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GondorParkingLot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/META-INF/GondorParkingLot.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/gondor/parking/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/gondor/parking/constants/ParkingSlotStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/gondor/parking/constants/VehicleType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/gondor/parking/domain/Bike.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/gondor/parking/domain/Car.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/gondor/parking/domain/ParkingFloor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/gondor/parking/domain/Slot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/gondor/parking/domain/Vehicle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/gondor/parking/exceptions/ParkingNotAvailableException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/gondor/parking/exceptions/VehicleNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/gondor/parking/factory/ParkingLotFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/gondor/parking/factory/VehicleFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/gondor/parking/service/ParkingLot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GondorParkingLot/gondor/parking/service/ParkingLotImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/GondorParkingLot/gondor/parking/factory/VehicleFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/GondorParkingLot/gondor/parking/service/ParkingLotImplTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gondor/parking/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gondor/parking/constants/ParkingSlotStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gondor/parking/constants/VehicleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gondor/parking/domain/Bike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gondor/parking/domain/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gondor/parking/domain/ParkingFloor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gondor/parking/domain/Slot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gondor/parking/domain/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gondor/parking/exceptions/ParkingNotAvailableException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gondor/parking/exceptions/VehicleNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gondor/parking/factory/ParkingLotFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gondor/parking/factory/VehicleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gondor/parking/service/ParkingLot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gondor/parking/service/ParkingLotImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/gondor.parking/service/ParkingLotImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/gondor/parking/factory/VehicleFactoryTest.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="56" column="54" lean-forward="true" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/gondor.parking/service/ParkingLotImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3178#3179#0" expanded="true" />
+                <element signature="e#3002#3003#0" expanded="true" />
+                <element signature="e#3063#3064#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/domain/ParkingFloor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="43" column="33" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1197#1198#0" expanded="true" />
+                <element signature="e#1225#1226#0" expanded="true" />
+                <element signature="e#1260#1261#0" expanded="true" />
+                <element signature="e#1294#1295#0" expanded="true" />
+                <element signature="e#1335#1336#0" expanded="true" />
+                <element signature="e#1387#1388#0" expanded="true" />
+                <element signature="e#1420#1421#0" expanded="true" />
+                <element signature="e#1468#1469#0" expanded="true" />
+                <element signature="e#1479#1480#0" expanded="true" />
+                <element signature="e#1530#1531#0" expanded="true" />
+                <element signature="e#1471#1472#0" expanded="true" />
+                <element signature="e#1515#1516#0" expanded="true" />
+                <element signature="e#1485#1486#0" expanded="true" />
+                <element signature="e#1535#1536#0" expanded="true" />
+                <element signature="e#1678#1679#0" expanded="true" />
+                <element signature="e#1722#1723#0" expanded="true" />
+                <element signature="e#1668#1669#0" expanded="true" />
+                <element signature="e#1723#1724#0" expanded="true" />
+                <element signature="e#1877#1878#0" expanded="true" />
+                <element signature="e#1918#1919#0" expanded="true" />
+                <element signature="e#2023#2024#0" expanded="true" />
+                <element signature="e#2067#2068#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/factory/VehicleFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/exceptions/VehicleNotFoundException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/factory/ParkingLotFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/service/ParkingLotImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-557">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3001#3002#0" expanded="true" />
+                <element signature="e#3120#3121#0" expanded="true" />
+                <element signature="e#3218#3219#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/domain/Slot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/service/ParkingLot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/domain/Vehicle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+              <folding>
+                <element signature="e#804#805#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>availableSlotsMap</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/company/gondor/exceptions/VehicleType.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/constants/ParkingSlotStatus.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/exceptions/ParkingNotAvailableException.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/service/ParkingLotService.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/service/ParkingLotServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/factory/ParkingLotFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/domain/Location.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/domain/ParkingElderlyComparator.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/domain/Car.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/domain/Bike.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/domain/Slot.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/domain/Vehicle.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/exceptions/VehicleNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/service/ParkingLotImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/service/ParkingLot.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/constants/VehicleType.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/factory/VehicleFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gondor/domain/ParkingFloor.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/factory/ParkingLot.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/domain/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/constants/VehicleType.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/constants/ParkingSlotStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/domain/Vehicle.java" />
+        <option value="$PROJECT_DIR$/src/main/main/gondor/parking/domain/Slot.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/exceptions/VehicleNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/exceptions/ParkingNotAvailableException.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/factory/ParkingLotFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/factory/VehicleFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/domain/Bike.java" />
+        <option value="$PROJECT_DIR$/src/test/gondor.parking/service/ParkingLotImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/gondor/parking/factory/VehicleFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/domain/ParkingFloor.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/domain/Slot.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/service/ParkingLotImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/gondor/parking/service/ParkingLot.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="GondorParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GondorParkingLot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GondorParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GondorParkingLot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GondorParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GondorParkingLot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GondorParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GondorParkingLot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="parking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GondorParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GondorParkingLot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="parking" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GondorParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GondorParkingLot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="parking" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GondorParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GondorParkingLot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="parking" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GondorParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GondorParkingLot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="parking" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GondorParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GondorParkingLot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GondorParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GondorParkingLot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GondorParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="GondorParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JUnit5.3" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="GondorParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JUnit5.3" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-jupiter-api-5.5.1.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GondorParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JUnit5.3" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-jupiter-api-5.5.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567248582195" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.3632184" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="main.gondor.parking.factory" />
+      <recent name="com.company.gondor.domain" />
+      <recent name="com.company.gondor.exceptions" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gondor.parking.Main" />
+      <module name="GondorParkingLot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gondor.parking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingLotImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GondorParkingLot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gondor.parking.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gondor.parking.service" />
+      <option name="MAIN_CLASS_NAME" value="gondor.parking.service.ParkingLotImplTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingLotImplTest.shouldThrowExceptionWhenVehicleNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GondorParkingLot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gondor.parking.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gondor.parking.service" />
+      <option name="MAIN_CLASS_NAME" value="gondor.parking.service.ParkingLotImplTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenVehicleNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehicleFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GondorParkingLot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gondor.parking.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gondor.parking.factory" />
+      <option name="MAIN_CLASS_NAME" value="gondor.parking.factory.VehicleFactoryTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehicleFactoryTest.shouldCreateVehicleWithGivenType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GondorParkingLot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gondor.parking.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gondor.parking.factory" />
+      <option name="MAIN_CLASS_NAME" value="gondor.parking.factory.VehicleFactoryTest" />
+      <option name="METHOD_NAME" value="shouldCreateVehicleWithGivenType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ParkingLotImplTest.shouldThrowExceptionWhenVehicleNotFound" />
+      <item itemvalue="JUnit.VehicleFactoryTest.shouldCreateVehicleWithGivenType" />
+      <item itemvalue="JUnit.VehicleFactoryTest" />
+      <item itemvalue="JUnit.ParkingLotImplTest" />
+      <item itemvalue="Application.Main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ParkingLotImplTest" />
+        <item itemvalue="JUnit.VehicleFactoryTest" />
+        <item itemvalue="JUnit.VehicleFactoryTest.shouldCreateVehicleWithGivenType" />
+        <item itemvalue="JUnit.ParkingLotImplTest.shouldThrowExceptionWhenVehicleNotFound" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd8a5dcb-64b4-43a6-b0b1-4a54c00dbe91" name="Default Changelist" comment="" />
+      <created>1566721237749</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566721237749</updated>
+      <workItem from="1566721242317" duration="38160000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ParkingLotImplTest_shouldNotParkVehicleWhenSpaceNotAvailable - 2019.08.31 at 15h 05m 21s.xml">
+      <configuration name="ParkingLotImplTest.shouldNotParkVehicleWhenSpaceNotAvailable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParkingLotImplTest_shouldNotParkVehicleWhenSpaceNotAvailable - 2019.08.31 at 15h 06m 20s.xml">
+      <configuration name="ParkingLotImplTest.shouldNotParkVehicleWhenSpaceNotAvailable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParkingLotImplTest_shouldUnparkVehicleIfParked - 2019.08.31 at 15h 09m 06s.xml">
+      <configuration name="ParkingLotImplTest.shouldUnparkVehicleIfParked" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParkingLotImplTest_shouldThrowExceptionWhenVehicleNotFound - 2019.08.31 at 15h 10m 41s.xml">
+      <configuration name="ParkingLotImplTest.shouldThrowExceptionWhenVehicleNotFound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParkingLotImplTest_shouldThrowExceptionWhenVehicleNotFound - 2019.08.31 at 15h 11m 50s.xml">
+      <configuration name="ParkingLotImplTest.shouldThrowExceptionWhenVehicleNotFound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VehicleFactoryTest_shouldCreateVehicleWithGivenType - 2019.08.31 at 15h 18m 15s.xml">
+      <configuration name="VehicleFactoryTest.shouldCreateVehicleWithGivenType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VehicleFactoryTest_shouldCreateVehicleWithGivenType - 2019.08.31 at 15h 19m 21s.xml">
+      <configuration name="VehicleFactoryTest.shouldCreateVehicleWithGivenType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VehicleFactoryTest - 2019.08.31 at 15h 21m 37s.xml">
+      <configuration name="VehicleFactoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParkingLotImplTest - 2019.08.31 at 15h 40m 44s.xml">
+      <configuration name="ParkingLotImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParkingLotImplTest - 2019.08.31 at 15h 40m 59s.xml">
+      <configuration name="ParkingLotImplTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="38160000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="812" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" weight="0.32916668" />
+      <window_info anchor="bottom" id="Docker" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32916668" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32916668" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="253" column="11" selection-start-line="253" selection-start-column="11" selection-end-line="253" selection-end-column="11" />
+          <folding>
+            <element signature="e#11348#11349#0" expanded="true" />
+            <element signature="e#11382#11383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
+          <folding>
+            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#2264#2265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="141" column="57" selection-start-line="141" selection-start-column="57" selection-end-line="141" selection-end-column="57" />
+          <folding>
+            <element signature="e#6694#6695#0" expanded="true" />
+            <element signature="e#6725#6726#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/PriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/gondor/domain/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/gondor/domain/ParkingElderlyComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
+            <element signature="e#190#191#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="192" column="6" selection-start-line="192" selection-start-column="6" selection-end-line="192" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/factory/ParkingLot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/constants/ParkingSlotStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/domain/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding>
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/exceptions/ParkingNotAvailableException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/domain/Bike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.1/junit-jupiter-api-5.5.1.jar!/org/junit/jupiter/api/Assertions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/gondor/parking/factory/VehicleFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/constants/VehicleType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/exceptions/VehicleNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/factory/ParkingLotFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/gondor.parking/service/ParkingLotImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3178#3179#0" expanded="true" />
+            <element signature="e#3002#3003#0" expanded="true" />
+            <element signature="e#3063#3064#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/domain/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding>
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/domain/ParkingFloor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1225#1226#0" expanded="true" />
+            <element signature="e#1260#1261#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1420#1421#0" expanded="true" />
+            <element signature="e#1468#1469#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1530#1531#0" expanded="true" />
+            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="e#1515#1516#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1722#1723#0" expanded="true" />
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1723#1724#0" expanded="true" />
+            <element signature="e#1877#1878#0" expanded="true" />
+            <element signature="e#1918#1919#0" expanded="true" />
+            <element signature="e#2023#2024#0" expanded="true" />
+            <element signature="e#2067#2068#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="56" column="54" lean-forward="true" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/service/ParkingLot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/service/ParkingLotImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-557">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3001#3002#0" expanded="true" />
+            <element signature="e#3120#3121#0" expanded="true" />
+            <element signature="e#3218#3219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/domain/Slot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/gondor/parking/factory/VehicleFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3632184" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3632184" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.12.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3632184" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3632184" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>GondorParkingLot</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3632184" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3632184" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
