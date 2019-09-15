@@ -47,7 +47,7 @@ public class Main {
             switch (choice) {
                 case 1:
                     System.out.println("-------- Enter vehicle details ------- ");
-                    System.out.println("Enter vehicle type");
+                    System.out.println("Enter vehicle type (CAR/BIKE)");
                     type = sc.next();
                     System.out.println("Enter vehicle number");
                     vehicleNum = sc.next();
@@ -59,10 +59,10 @@ public class Main {
                         System.out.println("Wrong input vehicle type, Please try again");
                         break;
                     }
-                    if(type.equals("CAR")){
+                    if(type.toLowerCase().equals("car")){
                         vehicleType = VehicleType.CAR;
                     }
-                    if(type.equals("BIKE")){
+                    if(type.toLowerCase().equals("bike")){
                         vehicleType = VehicleType.BIKE;
                     }
                     Vehicle vehicle = vehicleFactory.createVehicle(vehicleType, vehicleNum, isElderly, isRoyal);
@@ -134,6 +134,6 @@ public class Main {
     }
 
     private static boolean checkInputValidity(String type) {
-        return type.equals("CAR") || type.equals("BIKE");
+        return type.equals("car") || type.equals("bike");
     }
 }
