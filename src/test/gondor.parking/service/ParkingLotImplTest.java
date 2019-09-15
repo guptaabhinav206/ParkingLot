@@ -33,7 +33,7 @@ public class ParkingLotImplTest {
     public void shouldParkVehicleWhenSpaceAvailable() throws ParkingNotAvailableException {
         parkingLot = new ParkingLotImpl();
         parkingLot.createParkingLot(NUM_SLOTS, NUM_FLOORS);
-        int a = parkingLot.park(createVehicle());
+        String a = parkingLot.park(createVehicle());
         Assertions.assertNotEquals(a, -1);
     }
 
@@ -61,8 +61,8 @@ public class ParkingLotImplTest {
         parkingLot = new ParkingLotImpl();
         parkingLot.createParkingLot(NUM_SLOTS, NUM_FLOORS);
         Vehicle vehicle = createVehicle();
-        int park = parkingLot.park(vehicle);
-        int leave = parkingLot.leave(vehicle.getVehicleNo());
+        String park = parkingLot.park(vehicle);
+        String leave = parkingLot.leave(vehicle.getVehicleNo());
         Assertions.assertEquals(park, leave);
     }
 
@@ -84,10 +84,10 @@ public class ParkingLotImplTest {
     }
 
     public Vehicle createVehicle() {
-        return new Car(VehicleType.CAR, "101", false);
+        return new Car(VehicleType.CAR, "101", false, false);
     }
 
     public Vehicle getDummyVehicle() {
-        return new Car(VehicleType.CAR, "102", false);
+        return new Car(VehicleType.CAR, "102", false, false);
     }
 }

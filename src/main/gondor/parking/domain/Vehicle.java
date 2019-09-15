@@ -7,12 +7,14 @@ public abstract class Vehicle {
     String vehicleNo;
     private VehicleType vehicleType;
     boolean isElderly;
+    boolean isRoyal;
 
-    public Vehicle(VehicleType type, String vehicleNo, boolean isElderly) {
+    public Vehicle(VehicleType type, String vehicleNo, boolean isElderly, boolean isRoyal) {
 
         this.vehicleType = type;
         this.vehicleNo = vehicleNo;
         this.isElderly = isElderly;
+        this.isRoyal = isRoyal;
     }
 
     public String getVehicleNo() {
@@ -29,10 +31,15 @@ public abstract class Vehicle {
                 "vehicleNo='" + vehicleNo + '\'' +
                 ", vehicleType=" + vehicleType +
                 ", isElderly=" + isElderly +
+                ", isRoyal=" + isRoyal +
                 '}';
     }
 
     public boolean isNormal() {
         return !isElderly;
+    }
+
+    public boolean isRoyal() {
+        return isRoyal;
     }
 }

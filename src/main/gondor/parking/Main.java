@@ -22,8 +22,9 @@ public class Main {
         String type;
         String vehicleNum;
         boolean isElderly;
+        boolean isRoyal;
         int choice = 0;
-        int slotNum = 0;
+        String slotNum = "";
         VehicleType vehicleType = VehicleType.CAR;
         Scanner sc = new Scanner(System.in);
         System.out.println("--------- Enter number of floors in parking lot --------");
@@ -49,6 +50,8 @@ public class Main {
                     vehicleNum = sc.next();
                     System.out.println("Is the driver an elder person - enter T/F");
                     isElderly = sc.next().equals("T");
+                    System.out.println("Is the family a royal family - enter T/F");
+                    isRoyal = sc.next().equals("T");
                     if (!checkInputValidity(type)) {
                         System.out.println("Wrong input vehicle type, Please try again");
                         break;
@@ -59,20 +62,20 @@ public class Main {
                     if(type.equals("BIKE")){
                         vehicleType = VehicleType.BIKE;
                     }
-                    Vehicle vehicle = vehicleFactory.createVehicle(vehicleType, vehicleNum, isElderly);
+                    Vehicle vehicle = vehicleFactory.createVehicle(vehicleType, vehicleNum, isElderly, isRoyal);
                     try {
                         slotNum = parkingLot.park(vehicle);
-                        System.out.println("Vehicle +"+vehicle.getVehicleType()+ " with vehicleNo "+vehicle.getVehicleNo()+ " parked at slotNumber "+slotNum);
+                        System.out.println("Vehicle +"+vehicle.getVehicleType()+ " with vehicleNo "+vehicle.getVehicleNo()+ " parked at  "+slotNum);
                     } catch (ParkingNotAvailableException e) {
                         e.printStackTrace();
                     }
                     break;
                 case 2:
                     System.out.println("Enter vehicle number");
-                    vehicleNum = sc.nextLine();
+                    vehicleNum = sc.next();
                     try {
                         slotNum = parkingLot.leave(vehicleNum);
-                        System.out.println("Vehicle with vehicleNo "+vehicleNum+ " removed at slotNumber "+slotNum);
+                        System.out.println("Vehicle with vehicleNo "+vehicleNum+ " removed from  "+slotNum);
                     } catch (VehicleNotFoundException e) {
                         e.printStackTrace();
                     }

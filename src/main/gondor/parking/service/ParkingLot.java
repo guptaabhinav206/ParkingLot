@@ -21,14 +21,14 @@ public interface ParkingLot {
      * @param vehicle
      * @return  -1 when the parking slot is full
      */
-    int park(Vehicle vehicle) throws ParkingNotAvailableException;
+    String park(Vehicle vehicle) throws ParkingNotAvailableException;
 
     /**
      * Frees up a slot and returns the slot number
      * @param vehicleNo
      * @return
      */
-    int leave(String vehicleNo) throws VehicleNotFoundException;
+    String leave(String vehicleNo) throws VehicleNotFoundException;
 
     /**
      *

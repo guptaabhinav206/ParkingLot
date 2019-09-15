@@ -75,4 +75,8 @@ public class ParkingFloor {
     public Queue<Slot> getAvailableSlotsElderly() {
         return availableSlotsElderly;
     }
+
+    public boolean isSlotAvailableForRoyalFamilty() {
+        return availableSlotsList.size() > 2;
+    }
 }

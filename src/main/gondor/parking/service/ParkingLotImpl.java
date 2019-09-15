@@ -1,6 +1,8 @@
 package gondor.parking.service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import gondor.parking.domain.ParkingFloor;
@@ -13,6 +15,7 @@ public class ParkingLotImpl implements ParkingLot {
 
     private Map<Slot, Vehicle> slotVehicleMap;
     private Map<String, Slot> vehicleNoSlotMap;
+    private Map<String, List<Slot>> royalVehicleMap = new HashMap<>();
     private ParkingFloor[] parkingFloors;
     private Map<Integer, ParkingFloor> parkingFloorMap = new HashMap<>();
     private int numFloors;
@@ -29,11 +32,12 @@ public class ParkingLotImpl implements ParkingLot {
         for(int i=0;i<numFloors;i++) {
             parkingFloors[i] = new ParkingFloor(i+1, numOfSlots);
         }
+
     }
 
     @Override
-    public int park(Vehicle vehicle) throws ParkingNotAvailableException {
-        Slot slot;
+    public String park(Vehicle vehicle) throws ParkingNotAvailableException {
+        Slot slot = null;
 
         if(!vehicle.isNormal()) {
             if(parkingFloors[0].canParkElderly()) {
@@ -47,10 +51,23 @@ public class ParkingLotImpl implements ParkingLot {
 
         for (ParkingFloor parkingFloor : parkingFloors) {
             if (parkingFloor.canPark()) {
-                slot = parkingFloor.getFreeSlot();
-                slot.park(vehicle);
-                slotVehicleMap.put(slot, vehicle);
-                vehicleNoSlotMap.put(vehicle.getVehicleNo(), slot);
+                if(vehicle.isRoyal() && parkingFloor.isSlotAvailableForRoyalFamilty()) {
+                    List<Slot> royalSlot = new ArrayList<>();
+                    for(int i=0; i<3; i++) {
+                        slot = parkingFloor.getFreeSlot();
+                        slot.park(vehicle);
+                        royalSlot.add(slot);
+                        slotVehicleMap.put(slot, vehicle);
+                        if(i==1)
+                            vehicleNoSlotMap.put(vehicle.getVehicleNo(), slot);
+                    }
+                    royalVehicleMap.put(vehicle.getVehicleNo(), royalSlot);
+                } else {
+                    slot = parkingFloor.getFreeSlot();
+                    slot.park(vehicle);
+                    slotVehicleMap.put(slot, vehicle);
+                    vehicleNoSlotMap.put(vehicle.getVehicleNo(), slot);
+                }
                 return slot.getSlotNumber();
             }
         }
@@ -58,17 +75,34 @@ public class ParkingLotImpl implements ParkingLot {
     }
 
     @Override
-    public int leave(String vehicleNo) throws VehicleNotFoundException {
+    public String leave(String vehicleNo) throws VehicleNotFoundException {
+        Slot slot;
         if (!vehicleNoSlotMap.containsKey(vehicleNo)) {
             throw new VehicleNotFoundException("Cannot unpark !! Vehicle Not Found");
         } else {
-            Slot slot = vehicleNoSlotMap.get(vehicleNo);
-            vehicleNoSlotMap.remove(vehicleNo);
-            slotVehicleMap.remove(slot);
-            ParkingFloor parkingFloor = slot.getParkingFloor();
-            parkingFloor.freeSlot(slot);
-            slot.removeVehicle();
-            return slot.getSlotNumber();
+
+            if(royalVehicleMap.containsKey(vehicleNo)) {
+                List<Slot> royalSlots = royalVehicleMap.get(vehicleNo);
+                for(Slot slot1:royalSlots) {
+                    slotVehicleMap.remove(slot1);
+                    ParkingFloor parkingFloor = slot1.getParkingFloor();
+                    parkingFloor.freeSlot(slot1);
+                    slot1.removeVehicle();
+                }
+                Slot slot1 = vehicleNoSlotMap.get(vehicleNo);
+                vehicleNoSlotMap.remove(vehicleNo);
+                return slot1.getSlotNumber();
+
+            } else {
+                slot= vehicleNoSlotMap.get(vehicleNo);
+                vehicleNoSlotMap.remove(vehicleNo);
+                slotVehicleMap.remove(slot);
+                ParkingFloor parkingFloor = slot.getParkingFloor();
+                parkingFloor.freeSlot(slot);
+                slot.removeVehicle();
+                return slot.getSlotNumber();
+            }
+
         }
     }
 

@@ -25,8 +25,8 @@ public class Slot {
         return parkingFloor;
     }
 
-    public int getSlotNumber() {
-        return laneNumber*slotNumber;
+    public String getSlotNumber() {
+        return "lane number "+laneNumber+" slot number "+slotNumber;
     }
 
     public void removeVehicle() {
@@ -41,5 +41,16 @@ public class Slot {
 
     public Vehicle getVehicle() {
         return vehicle;
+    }
+
+    @Override
+    public String toString() {
+        return "Slot{" +
+                "vehicle=" + vehicle +
+                ", laneNumber=" + laneNumber +
+                ", slotNumber=" + slotNumber +
+                ", parkingFloor=" + parkingFloor +
+                ", slotStatus=" + slotStatus +
+                '}';
     }
 }
