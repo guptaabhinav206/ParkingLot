@@ -27,6 +27,9 @@ public class Main {
         String slotNum = "";
         VehicleType vehicleType = VehicleType.CAR;
         Scanner sc = new Scanner(System.in);
+        System.out.println("For simplicity I've assumed a elderly person is not royal as I am maintaining a " +
+                "different data structure for storing elderly slots");
+
         System.out.println("--------- Enter number of floors in parking lot --------");
         int n = sc.nextInt();
         ParkingLot parkingLot = ParkingLotFactory.getParkingLot();

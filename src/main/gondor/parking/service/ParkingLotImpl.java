@@ -35,6 +35,13 @@ public class ParkingLotImpl implements ParkingLot {
 
     }
 
+    /**
+     * Park Implementation (For simplicity I've assumed a elderly person is not royal as I am maintaining a
+     * different data structure for storing elderly slots
+     * @param vehicle
+     * @return
+     * @throws ParkingNotAvailableException
+     */
     @Override
     public String park(Vehicle vehicle) throws ParkingNotAvailableException {
         Slot slot = null;
